@@ -328,7 +328,7 @@ var userEmail = "";
 		<div class="row">
 			<div class="col-md-offset-2 col-md-8">
 				 <div class="homepage-logo" >
-			<img src="images/chatdash_Logo_large.jpg">
+			<img src="/TrollChat/images/chatdash_Logo_large.jpg"/>
 				</div>
 			</div>
 		</div>
@@ -377,7 +377,7 @@ var userEmail = "";
 	
 	<div align="right" id="signOutDiv"></div>
 	<table><tr>
-	<td><input type="text" id="srchbox"/></td><td></td>
+	<td></td><td></td>
 	<td></td>
   </tr></table>
   <div id="mainPg">
