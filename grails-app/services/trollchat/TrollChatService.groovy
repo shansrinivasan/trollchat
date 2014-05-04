@@ -10,7 +10,17 @@ class TrollChatService {
 	}
 	def getTrendingVideos(String url){
 		def messages = Message.findAll(" from Message message where message.tcItem.url!=:url order by message.date",[url:url]);
-		messages*.tcItem.unique{a,b -> a.url<=>b.url}
+		def items = messages*.tcItem.unique{a,b -> a.url<=>b.url}
+		def retI = []
+		if(items.size()>=5){
+		5.times{
+			retI << items.get(it)
+		}
+		} else{
+			retI.addAll(items)
+		}
+		retI
+
 	}
 	def loginUser(String tcHandle,String email,String url) {
 		
