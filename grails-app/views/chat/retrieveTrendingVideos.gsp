@@ -3,7 +3,7 @@
 		<td onmouseover="$('#${trendingVideo.url}').show()" onmouseout="$('#${trendingVideo.url}').hide()">
 		<div id="${trendingVideo.url}" style="display:none">
 			<g:link controller="chat" action="join"
-				params="[tcUrl:trendingVideo.url]" >
+				params="[url:trendingVideo.url]" >
 					Dash On this now!!
 			</g:link>
 		</div>
