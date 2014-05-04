@@ -1,7 +1,7 @@
 <tr>
 	<g:each in="${trendingVideos}" var="trendingVideo">
 		<td onmouseover="$('#${trendingVideo.url}').show()" onmouseout="$('#${trendingVideo.url}').hide()">
-		<div id="${trendingVideo.url}">
+		<div id="${trendingVideo.url}" style="display:none">
 			<g:link controller="chat" action="join"
 				params="[tcUrl:trendingVideo.url]" >
 					Dash On this now!!
