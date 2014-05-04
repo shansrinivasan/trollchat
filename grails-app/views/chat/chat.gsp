@@ -39,12 +39,12 @@
 <body>
 	<div class="navbar navbar-default">
 	  <div class="navbar-header">
+	  	<img src="images/chatdashLogo.png">
 	    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
 	      <span class="icon-bar"></span>
 	      <span class="icon-bar"></span>
 	      <span class="icon-bar"></span>
 	    </button>
-	    <a class="navbar-brand" href="#">ChatDash</a>
 	  </div>
 	  <div class="navbar-collapse collapse navbar-responsive-collapse">
 	    <ul class="nav navbar-nav navbar-right">
@@ -65,7 +65,7 @@
 				    </span>
 				  </div>
 				</div>
-<g:video videoKey="${session.result.tcItem.url}" width="640px" height="390px" /><%--
+<g:video videoKey="${session.result.tcItem.url}" width="650px" height="390px" /><%--
 				    <div class="gwd-div-ftpg" id="ytplayer"></div>
 
 				<script>
@@ -81,13 +81,23 @@
 				  function onYouTubePlayerAPIReady() {
 				    player = new YT.Player('ytplayer', {
 				      height: '390',
-				      width: '640',
+				      width: '650',
 				      videoId: '${session.result.tcItem.url}'
 				    });
 				  }
 					</script>
 				--%></div>
-			<div class="col-md-3">
+			<div class="col-md-5">
+				<div  id="chatMessages"></div>
+					<div id="temp"></div>
+					<div class="row">
+				<input type="text" id="messageBox" name="message" onkeypress="messageKeyPress(this,event);"/>
+				</div>
+				
+				
+				
+				
+				
 				<table class="table table-striped table-hover ">
 				  <thead>
 				    <tr>
@@ -95,7 +105,9 @@
 				    </tr>
 				  </thead>
 				  <tbody>
+						  
 		<div  id="trendingVideos">
+	<div class="row">
 		</div>
 				  </tbody>
 				</table>
@@ -110,12 +122,7 @@
 			</div>
 			<div class="col-md-4"></div>
 		</div> -->
-		<div  id="chatMessages">
-		</div>
-		<div id="temp"></div>
-		<div class="row">
-<input type="text" id="messageBox" name="message" onkeypress="messageKeyPress(this,event);"/>
-</div>
+		
 	</div>
 
 
