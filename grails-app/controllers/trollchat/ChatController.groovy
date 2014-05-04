@@ -14,7 +14,16 @@ class ChatController {
 		def messages = trollChatService.getAllMessagesForURL(item.url)
 		[messages:messages]
 	}
-	
+	def retrieveTrendingVideos() {
+		def result = session.result
+		TCItem item  = result?.tcItem
+		def videos = trollChatService.getTrendingVideos()
+//		videos.each{
+//			if(it.url == item.url) videos.remove(it)
+//		}
+		[trendingVideos:videos]
+	}
+
 	def submitMessage(String message) {
 		new Message(user: session.result.user,tcItem:session.result.tcItem, message:message).save()
 		render "<script>retrieveLatestMessages()</script>"
