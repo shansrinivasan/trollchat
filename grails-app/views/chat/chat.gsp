@@ -66,7 +66,7 @@
 				</div>
 			<g:video videoKey="${session.result.tcItem.url}" width="650px" height="390px" /></div>
 			<div class="col-md-5">
-				<div class="chat-box">
+				<div class="well chat-box">
 					<div  id="chatMessages"></div>
 						<div id="temp"></div>
 						<div class="row">
