@@ -1,24 +1,31 @@
 package trollchat
 
 class ChatController {
+	
+	def trollChatService
+	
 	def index() {
 	}
 	
 	def retrieveLatestMessages() {
-		def messages = Message.listOrderByDate(order: 'desc', max:10)
-		[messages:messages.reverse()]
+		def result = session.result
+		TCItem item  = result?.tcItem
+		
+		def messages = trollChatService.getAllMessagesForURL(item.url)
+		[messages:messages]
 	}
 	
 	def submitMessage(String message) {
-		new Message(nickname: session.nickname, message:message).save()
+		new Message(user: session.result.user,tcItem:session.result.tcItem, message:message).save()
 		render "<script>retrieveLatestMessages()</script>"
 	}
 
 	def join(String nickname) {
-		if ( nickname.trim() == '' ) {
+		if (!nickname || nickname.trim() == '' ) {
 			redirect(action:'index')
 		} else {
-			session.nickname = nickname
+			def result = trollChatService.loginUser(nickname, "nickname@email.com", "SuperURL")
+			session.result = result
 			render (view: 'chat')
 		}
 	}

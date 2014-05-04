@@ -21,8 +21,8 @@ class TrollChatServiceIntegrationSpec extends Specification {
 		when:
 			service.loginUser("testHandle", "test@email.com", "https://www.youtube.com/watch?v=J---aiyznGQ")
 		then:
-			User.findByTcHandle("testHandle")
-			TrollChatItem.findByUrl("https://www.youtube.com/watch?v=J---aiyznGQ")
+			TCUser.findByTcHandle("testHandle")
+			TCItem.findByUrl("https://www.youtube.com/watch?v=J---aiyznGQ")
 		
     }
 

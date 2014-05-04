@@ -4,9 +4,8 @@ class Message {
 	
 	Date date = new Date()
 	String message
-    User user
-	TrollChatItem trollChatItem
 	
+	static hasOne = [user:TCUser,tcItem:TCItem]
 	
 	static constraints = {
     }

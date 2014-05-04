@@ -17,12 +17,12 @@ hibernate {
 environments {
     development {
         dataSource {
-//            dbCreate = "create-drop" // one of 'create', 'create-drop', 'update', 'validate', ''
+            dbCreate = "create-drop" // one of 'create', 'create-drop', 'update', 'validate', ''
 //            url = "jdbc:h2:mem:devDb;MVCC=TRUE;LOCK_TIMEOUT=10000;DB_CLOSE_ON_EXIT=FALSE"
 			driverClassName = "org.postgresql.Driver"
 	        dialect = org.hibernate.dialect.PostgreSQLDialect
 	
-	        uri = new URI(System.env.DATABASE_URL?:"postgres://zzbekxszlhollx:1XTynMBr1tM-PFf6CMpv8v0cBr@ec2-54-83-43-49.compute-1.amazonaws.com:5432/d3j1d2kc2nlffd")
+	        uri = new URI(System.env.DATABASE_URL?:"postgres://postgres:sm@localhost:5432/postgres")
 	
 	        url = "jdbc:postgresql://"+uri.host+uri.path
 	        username = uri.userInfo.split(":")[0]

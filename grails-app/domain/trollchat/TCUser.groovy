@@ -1,13 +1,13 @@
 package trollchat
 
-class User {
+class TCUser {
 	String tcHandle
 	Date createDate
 	String emailAddress
-	Set<Message> messages
+	
+	static hasMany = [messages:Message]
 	
 	
-	
-    static constraints = {
+	static constraints = {
     }
 }
