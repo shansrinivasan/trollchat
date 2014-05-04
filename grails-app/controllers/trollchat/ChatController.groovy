@@ -20,11 +20,11 @@ class ChatController {
 		render "<script>retrieveLatestMessages()</script>"
 	}
 
-	def join(String nickname) {
-		if (!nickname || nickname.trim() == '' ) {
+	def join(String tcHandle,String email,String url) {
+		if (!tcHandle || tcHandle.trim() == '' ) {
 			redirect(action:'index')
 		} else {
-			def result = trollChatService.loginUser(nickname, "nickname@email.com", "SuperURL")
+			def result = trollChatService.loginUser(tcHandle, email, url)
 			session.result = result
 			render (view: 'chat')
 		}
