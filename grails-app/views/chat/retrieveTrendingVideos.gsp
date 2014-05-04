@@ -7,8 +7,8 @@
 					Dash On this now!!
 			</g:link>
 		</div>
-				<g:video videoKey="${trendingVideo.url}" width="160px"
-					height="140px" />
+				<g:video videoKey="${trendingVideo.url}" width="140px"
+					height="100px" />
 				
 			</td>
 	</g:each>
