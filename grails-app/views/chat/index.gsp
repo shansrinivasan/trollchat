@@ -1,6 +1,7 @@
 <html>
 <head data-gwd-animation-mode="quickMode">
-    <title>Troll Chat</title>
+    <title>ChatDash</title>
+    <link href="/TrollChat/css/application.css" rel="stylesheet" type="text/css">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="generator" content="Google Web Designer 1.0.6.0428">
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js" ></script>
@@ -324,8 +325,17 @@ var userEmail = "";
   </script></head>
 	<body>
 	<div align="right" id="signOutDiv"></div>
-	<table><tr>
-	<td><input type="text" id="srchbox"/></td><td><div id="srchbtndiv"></div></td>
+	<br/><br/><br/>
+	<div class="row">
+			<div class="col-md-offset-2 col-md-8">
+				 <div class="homepage-logo" >
+			<img src="/TrollChat/images/chatdash_Logo_large.jpg"/>
+				</div>
+			</div>
+		</div>
+	<div class="homepage-center">
+	<table align="center"><tr>
+	<td><input class="form-control" type="text" id="srchbox" placeholder="url"/></td><td><div id="srchbtndiv"></div></td>
 	<td><div id="gConnect">
     <button class="g-signin"
         data-scope="https://www.googleapis.com/auth/plus.login https://www.googleapis.com/auth/userinfo.email"
@@ -336,6 +346,7 @@ var userEmail = "";
         data-cookiepolicy="single_host_origin">Search</button>
   </div></td>
   </tr></table>
+  </div>
   <div id="mainPg">
   <table><tr><td id="playerCell"><div class="gwd-div-ftpg" id="ytplayer"></div></td><td id="nxtCell"></td></tr></table>
   </div>
