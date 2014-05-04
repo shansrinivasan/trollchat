@@ -5904,7 +5904,8 @@ table .info a,
 /*  text-shadow: 1px 1px 1px #222;*/
 }
 .chat-box {
-  height: 450px;
+  height: 400px;
+  margin-bottom: 10px;
   overflow-y:scroll;
 }
 .chat-user-name {
@@ -5927,7 +5928,7 @@ table .info a,
 }
 .message-bar {
   position: absolute;
-  bottom:30;
-  padding-left: 30px;
+  top:385;
+  left: 0;
   right:10;
 }

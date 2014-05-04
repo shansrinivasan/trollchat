@@ -66,16 +66,16 @@
 				</div>
 			<g:video videoKey="${session.result.tcItem.url}" width="650px" height="390px" /></div>
 			<div class="col-md-5">
-				<div class="well chat-box">
+				<div class="chat-box">
 					<div  id="chatMessages"></div>
 						<div id="temp"></div>
-						<div class="row">
-							<div class="col-md-5">
-								<input type="text" class="message-box" id="messageBox" name="message" onkeypress="messageKeyPress(this,event);"/>
-							</div>
-						</div>
-					</div>
 				</div>
+				
+					<input type="text" class="form-control" id="messageBox" name="message" onkeypress="messageKeyPress(this,event);"/>
+				
+			</div>
+		</div>
+
 				
 				
 				
