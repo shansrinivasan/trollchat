@@ -17,14 +17,15 @@ var userEmail = "";
               authResult[field] + '<br/>');
         }
         if (authResult['access_token']) {
-		displayVid();
+		
 		//window.location.href = "mainpage.htm"
 		//helper.display();
 		
 		//add after success code here
           //$('#authOps').show('slow');
-          $('#gConnect').hide();
+          //$('#gConnect').hide();
           helper.profile();
+          firstDisplay();
           //helper.people();
         } else if (authResult['error']) {
           // There was an error, which means the user is not signed in.
@@ -118,7 +119,10 @@ var userEmail = "";
 	  
       request.execute( function(profile) {
         $('#profile').empty();
-		console.log(profile['emails'][0].value)
+		//userEmail = profile['emails'][0].value;
+		$('#t1').val(profile['emails'][0].value)
+		$('#t2').val(profile['emails'][0].value)
+		//alert(userEmail)
         if (profile.error) {
           $('#profile').append(profile.error);
           return;
