@@ -39,7 +39,7 @@
 <body>
 	<div class="navbar navbar-default">
 	  <div class="navbar-header">
-	  	<img src="images/chatdashLogo.png">
+	  	<g:img dir="images" file="chatdashLogo.png"/>
 	    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
 	      <span class="icon-bar"></span>
 	      <span class="icon-bar"></span>
