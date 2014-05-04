@@ -41,8 +41,17 @@ class ChatController {
 	}
 
 	def join(String tcHandle,String email,String url) {
+		if(url && url.indexOf('youtube')!=-1 && url.indexOf('v=')){
+			url = url.substring(url.indexOf('v=')+2)
+		}
+		if(!tcHandle){
+			tcHandle = session.result?.user?.tcHandle
+		}
+		if(!email){
+			email = session.result?.user?.emailAddress
+		}
 		if (!tcHandle || tcHandle.trim() == '' ) {
-			redirect(action:'index')
+			redirect(action:'index')//8770065
 		} else {
 			def result = trollChatService.loginUser(tcHandle, email, url)
 			session.result = result
