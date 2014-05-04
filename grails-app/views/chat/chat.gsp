@@ -1,6 +1,6 @@
 <html>
 <head>
-	<link href="/TrollChat/css/application.css" rel="stylesheet" type="text/css">
+	<link href="/css/application.css" rel="stylesheet" type="text/css">
 	<title></title>
 			<g:javascript library="application"/>		
 	 <g:javascript library="jquery"/>
