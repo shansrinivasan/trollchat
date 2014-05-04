@@ -1,6 +1,15 @@
 <tr>
 	<g:each in="${trendingVideos}" var="trendingVideo">
-		<td><g:video videoKey="${trendingVideo.url}" width="140px"
-				height="100px" /></td>
+		<td onmouseover="$('#${trendingVideo.url}').show()" onmouseout="$('#${trendingVideo.url}').hide()">
+		<div id="${trendingVideo.url}">
+			<g:link controller="chat" action="join"
+				params="[tcUrl:trendingVideo.url]" >
+					Dash On this now!!
+			</g:link>
+		</div>
+				<g:video videoKey="${trendingVideo.url}" width="160px"
+					height="140px" />
+				
+			</td>
 	</g:each>
 </tr>

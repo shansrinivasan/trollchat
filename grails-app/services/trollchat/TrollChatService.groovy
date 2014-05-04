@@ -17,7 +17,6 @@ class TrollChatService {
 		TCItem tcItem = TCItem.findByUrl(url)
 		if(!tcItem){
 			tcItem = new TCItem(url:url,createdDate:new Date())
-			
 		}
 		TCUser user = TCUser.findByTcHandle(tcHandle)
 		if(!user){
