@@ -1,7 +1,6 @@
 <html>
 <head data-gwd-animation-mode="quickMode">
-    <title>ChatDash</title>
-    <link href="/TrollChat/css/application.css" rel="stylesheet" type="text/css">
+    <title>Troll Chat</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="generator" content="Google Web Designer 1.0.6.0428">
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js" ></script>
@@ -324,36 +323,10 @@ var userEmail = "";
   	
   </script></head>
 	<body>
-	<div class="container">
-		<div class="row">
-			<div class="col-md-offset-2 col-md-8">
-				 <div class="homepage-logo" >
-			<img src="/TrollChat/images/chatdash_Logo_large.jpg"/>
-				</div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-offset-2 col-md-8">
-				<form class="form-horizontal">
-			  
-
-	      	<div class="homepage-center">
-	        <input type="text" class="form-control" id="srchbox" placeholder="Url">
-			</div>
-		</div>
-
-			  <div class="row">
-			  	<div class="col-md-offset-2 col-md-8">
-			  		<div class="homepage-center">
-
-			  	<span class="help-block">add chat to your dash</span>
-			  </div>
-			</div>
-						  	<div class="col-md-offset-2 col-md-8">
-			  		<div class="homepage-center">
-
-			    <div class="form-group">
-			        <div id="gConnect">
+	<div align="right" id="signOutDiv"></div>
+	<table><tr>
+	<td><input type="text" id="srchbox"/></td><td><div id="srchbtndiv"></div></td>
+	<td><div id="gConnect">
     <button class="g-signin"
         data-scope="https://www.googleapis.com/auth/plus.login https://www.googleapis.com/auth/userinfo.email"
         data-requestvisibleactions="http://schemas.google.com/AddActivity"
@@ -361,24 +334,7 @@ var userEmail = "";
         data-callback="onSignInCallback"
         data-theme="dark"
         data-cookiepolicy="single_host_origin">Search</button>
-  </div><div id="srchbtndiv"></div>
-			      </div>
-			    </div>
-
-			</form>
-		</div>
-	</div>
-</div>
-
-	</div>
-</div>
-</div>
-</div>
-	
-	<div align="right" id="signOutDiv"></div>
-	<table><tr>
-	<td></td><td></td>
-	<td></td>
+  </div></td>
   </tr></table>
   <div id="mainPg">
   <table><tr><td id="playerCell"><div class="gwd-div-ftpg" id="ytplayer"></div></td><td id="nxtCell"></td></tr></table>
