@@ -120,8 +120,8 @@ var userEmail = "";
       request.execute( function(profile) {
         $('#profile').empty();
 		//userEmail = profile['emails'][0].value;
-		$('#t1').val(profile['emails'][0].value)
-		$('#t2').val(profile['emails'][0].value)
+		$('#tcHandle').val(profile['emails'][0].value)
+		$('#email').val(profile['emails'][0].value)
 		//alert(userEmail)
         if (profile.error) {
           $('#profile').append(profile.error);
