@@ -13,7 +13,7 @@ class ChatController {
 		def result = session.result
 		TCItem item  = result?.tcItem
 		
-		def messages = trollChatService.getAllMessagesForURL(item.url)
+		def messages = trollChatService.getAllMessagesForURL(item?.url)
 		['messages':messages]
 	}
 	
