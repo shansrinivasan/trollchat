@@ -1,6 +1,6 @@
 <html>
 <head>
-	<g:resource dir="css" file="application.css" absolute="true"/>
+	<link href="<g:resource dir="css" file="application.css"/>" rel="stylesheet" type="text/css">
 	<title></title>
 			<g:javascript library="application"/>		
 	 <g:javascript library="jquery"/>
