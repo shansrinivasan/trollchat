@@ -36,7 +36,7 @@ $(document).ready(function() {
 function firstDisplay() {
 	//$('#t1').val(userEmail);
 	//$('#t2').val(userEmail);
-	$('#t3').val($('#srch').val().split('v=')[1]);//alert(userEmail)
+	$('#url').val($('#srch').val().split('v=')[1]);//alert(userEmail)
 	$('#mainFrm').submit();
 }
   </script>
@@ -53,9 +53,9 @@ function firstDisplay() {
         data-cookiepolicy="single_host_origin">Search</button>
   </div>
   <div style="">
-<g:textField id="t1" name="tcHandle"/>
-<g:textField id="t2" name="email"/>
-<g:textField id="t3" name="url"/>
+<g:textField name="tcHandle"/>
+<g:textField name="email"/>
+<g:textField name="url"/>
 </div>
 </g:form>
 <!--<g:form action="join">

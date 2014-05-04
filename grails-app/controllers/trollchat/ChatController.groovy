@@ -1,5 +1,7 @@
 package trollchat
 
+import grails.converters.JSON
+
 class ChatController {
 	
 	def trollChatService
@@ -14,6 +16,18 @@ class ChatController {
 		def messages = trollChatService.getAllMessagesForURL(item.url)
 		['messages':messages]
 	}
+	
+	def retrieveMessagesForUrl() {
+		
+		def inUrl = params.inUrl;
+		
+		def messages = trollChatService.getAllMessagesForURL(inUrl)
+		[messages:messages]
+		
+		println messages
+		render messages as JSON
+	}
+	
 	def retrieveTrendingVideos() {
 		def result = session.result
 		TCItem item  = result?.tcItem
