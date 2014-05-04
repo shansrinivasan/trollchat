@@ -328,7 +328,7 @@ var userEmail = "";
 	<td><input type="text" id="srchbox"/></td><td><div id="srchbtndiv"></div></td>
 	<td><div id="gConnect">
     <button class="g-signin"
-        data-scope="https://www.googleapis.com/auth/plus.login"
+        data-scope="https://www.googleapis.com/auth/plus.login https://www.googleapis.com/auth/userinfo.email"
         data-requestvisibleactions="http://schemas.google.com/AddActivity"
         data-clientId="948994549482-jcl82o2uupvmfeuh6u4u6n4adruujo5f.apps.googleusercontent.com"
         data-callback="onSignInCallback"
