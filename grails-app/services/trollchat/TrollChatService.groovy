@@ -6,7 +6,7 @@ import grails.transaction.Transactional
 class TrollChatService {
 	def getAllMessagesForURL(String url){
 		TCItem tcItem = TCItem.findByUrl(url)
-		tcItem.messages.sort{it.date}
+		tcItem.messages.sort{it.date}.reverse()
 	}
 	def getTrendingVideos(String url){
 		def messages = Message.findAll(" from Message message where message.tcItem.url!=:url order by message.date",[url:url]);

@@ -1,6 +1,6 @@
 <html>
 <head>
-	<g:resource dir="css" file="application.css" />
+	<link href="<g:resource dir="css" file="application.css"/>" rel="stylesheet" type="text/css">
 	<title></title>
 			<g:javascript library="application"/>		
 	 <g:javascript library="jquery"/>
@@ -69,13 +69,13 @@
 				<div class="chat-box">
 					<div  id="chatMessages"></div>
 						<div id="temp"></div>
-						<div class="row">
-							<div class="col-md-5">
-								<input type="text" class="message-box" id="messageBox" name="message" onkeypress="messageKeyPress(this,event);"/>
-							</div>
-						</div>
-					</div>
 				</div>
+				
+					<input type="text" class="form-control" id="messageBox" name="message" onkeypress="messageKeyPress(this,event);"/>
+				
+			</div>
+		</div>
+
 				
 				
 				
