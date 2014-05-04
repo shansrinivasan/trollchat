@@ -64,47 +64,41 @@
 				    </span>
 				  </div>
 				</div>
-<g:video videoKey="${session.result.tcItem.url}" width="650px" height="390px" /></div>
+			<g:video videoKey="${session.result.tcItem.url}" width="650px" height="390px" /></div>
 			<div class="col-md-5">
 				<div class="chat-box">
 					<div  id="chatMessages"></div>
 						<div id="temp"></div>
 						<div class="row">
-						<input type="text" class="message-box" id="messageBox" name="message" onkeypress="messageKeyPress(this,event);"/>
+							<div class="col-md-5">
+								<input type="text" class="message-box" id="messageBox" name="message" onkeypress="messageKeyPress(this,event);"/>
+							</div>
+						</div>
 					</div>
 				</div>
 				
 				
 				
 				
-			<div class="row">
-				<table class="table table-striped table-hover ">
-				  <thead>
-				    <tr>
-				      <th class="accent">TRENDING</th>
-				    </tr>
-				  </thead>
-				  <tbody>
-			</div>
-						  
-		<div  id="trendingVideos">
-	<div class="row">
 		</div>
-				  </tbody>
-				</table>
-			</div>
-			<div class="col-md-1"></div>
-
-		</div>
-<!-- 		<div class="row">
-			<div class="col-md-1"></div>
-			<div class="col-md-7">
-				<h2>Title of Video</h2>
-			</div>
-			<div class="col-md-4"></div>
-		</div> -->
 		
-	</div>
+			<div class="row">
+				<div class="col-md-12"	
+					<table class="table">
+					  <thead>
+					    <tr>
+					      <th class="accent">TRENDING</th>
+					    </tr>
+					  </thead>
+					  <tbody>			  
+						<div  id="trendingVideos">
+					  </tbody>
+					</table>
+				</div>
+			
+			</div>
+		</div>
+
 
 
 
