@@ -185,8 +185,22 @@ var userEmail = "";
   
   function firstDisplay() {
 		//alert(userEmail)
+		var request = gapi.client.plus.people.get({
+   'userId': 'me'
+ });
+		gapi.client.load('oauth2', 'v2', function() {
+			  gapi.client.oauth2.userinfo.get().execute(function(resp) {
+			    // Shows user email
+			    console.log(resp.email);
+			    userEmail = resp.email;
+			  })
+			});
+		//userEmail
+
+		 //return;
+		 
 		var tch = userEmail.split("@")[0];
-		window.location.href = "/TrollChat/chat/join?tcHandle=" + tch + "&email=" + userEmail + "&url=" + $('#srchbox').val().split('v=')[1];
+		window.location.href = "/chat/join?tcHandle=" + tch + "&email=" + userEmail + "&url=" + $('#srchbox').val().split('v=')[1];
 		//$('#t1').val(userEmail);
 		//$('#t2').val(userEmail);
 		//$('#url').val($('#srch').val().split('v=')[1]);//alert(userEmail)
