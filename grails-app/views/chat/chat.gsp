@@ -54,7 +54,6 @@
 	</div>
 	<div class="container">
 		<div class="row">
-			<div class="col-md-1"></div>
 			<div class="col-md-7">
 				<div class="form-group">
 				  <div class="input-group">
@@ -65,39 +64,20 @@
 				    </span>
 				  </div>
 				</div>
-<g:video videoKey="${session.result.tcItem.url}" width="650px" height="390px" /><%--
-				    <div class="gwd-div-ftpg" id="ytplayer"></div>
-
-				<script>
-				  // Load the IFrame Player API code asynchronously.
-				  var tag = document.createElement('script');
-				  tag.src = "https://www.youtube.com/player_api";
-				  var firstScriptTag = document.getElementsByTagName('script')[0];
-				  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-				  // Replace the 'ytplayer' element with an <iframe> and
-				  // YouTube player after the API code downloads.
-				  var player;
-				  function onYouTubePlayerAPIReady() {
-				    player = new YT.Player('ytplayer', {
-				      height: '390',
-				      width: '650',
-				      videoId: '${session.result.tcItem.url}'
-				    });
-				  }
-					</script>
-				--%></div>
+<g:video videoKey="${session.result.tcItem.url}" width="650px" height="390px" /></div>
 			<div class="col-md-5">
-				<div  id="chatMessages"></div>
-					<div id="temp"></div>
-					<div class="row">
-				<input type="text" id="messageBox" name="message" onkeypress="messageKeyPress(this,event);"/>
+				<div class="chat-box">
+					<div  id="chatMessages"></div>
+						<div id="temp"></div>
+						<div class="row">
+						<input type="text" class="message-box" id="messageBox" name="message" onkeypress="messageKeyPress(this,event);"/>
+					</div>
 				</div>
 				
 				
 				
 				
-				
+			<div class="row">
 				<table class="table table-striped table-hover ">
 				  <thead>
 				    <tr>
@@ -105,6 +85,7 @@
 				    </tr>
 				  </thead>
 				  <tbody>
+			</div>
 						  
 		<div  id="trendingVideos">
 	<div class="row">
