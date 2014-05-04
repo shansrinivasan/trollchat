@@ -1,7 +1,7 @@
 <html>
 <head data-gwd-animation-mode="quickMode">
     <title>ChatDash</title>
-    <link href="application.css" rel="stylesheet" type="text/css">
+    <link href="/TrollChat/css/application.css" rel="stylesheet" type="text/css">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="generator" content="Google Web Designer 1.0.6.0428">
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js" ></script>
