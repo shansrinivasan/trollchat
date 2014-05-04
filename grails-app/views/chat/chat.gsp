@@ -59,7 +59,7 @@
 				<div class="form-group">
 				  <div class="input-group">
 				    <span class="input-group-addon">url</span>
-				    <input type="text" class="form-control">
+				    <input type="text"  name="tcUrl" class="form-control">
 				    <span class="input-group-btn">
 				      <button class="btn btn-default" type="button">Dash</button>
 				    </span>

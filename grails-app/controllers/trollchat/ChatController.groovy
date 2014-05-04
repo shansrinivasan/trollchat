@@ -12,16 +12,13 @@ class ChatController {
 		TCItem item  = result?.tcItem
 		
 		def messages = trollChatService.getAllMessagesForURL(item.url)
-		[messages:messages]
+		['messages':messages]
 	}
 	def retrieveTrendingVideos() {
 		def result = session.result
 		TCItem item  = result?.tcItem
-		def videos = trollChatService.getTrendingVideos()
-//		videos.each{
-//			if(it.url == item.url) videos.remove(it)
-//		}
-		[trendingVideos:videos]
+		def videos = trollChatService.getTrendingVideos(item.url)
+		['trendingVideos':videos]
 	}
 
 	def submitMessage(String message) {

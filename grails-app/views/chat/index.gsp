@@ -3,6 +3,8 @@
 <head>
     <meta name="layout" content="main"/>
     <title>Simple Chat</title>
+		<g:javascript library="application"/>		
+		<r:layoutResources />
 </head>
 <body>
 <g:form action="join">
