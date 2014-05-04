@@ -1,7 +1,7 @@
 <html>
 <head data-gwd-animation-mode="quickMode">
     <title>ChatDash</title>
-    <link href="/TrollChat/css/application.css" rel="stylesheet" type="text/css">
+    <link href="/css/application.css" rel="stylesheet" type="text/css">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="generator" content="Google Web Designer 1.0.6.0428">
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js" ></script>
@@ -326,15 +326,19 @@ var userEmail = "";
 	<body>
 	<div align="right" id="signOutDiv"></div>
 	<br/><br/><br/>
+	
+	<div class="homepage-center">
+	<table align="center">
+	<tr><td colspan="2" align="center">
 	<div class="row">
-			<div class="col-md-offset-2 col-md-8">
+			<div class2="col-md-offset-2 col-md-8">
 				 <div class="homepage-logo" >
-			<img src="/TrollChat/images/chatdash_Logo_large.jpg"/>
+			<img src="/images/chatdash_Logo_large.jpg"/>
 				</div>
 			</div>
 		</div>
-	<div class="homepage-center">
-	<table align="center"><tr>
+	</td></tr>
+	<tr>
 	<td><input class="form-control" type="text" id="srchbox" placeholder="url"/></td><td><div id="srchbtndiv"></div></td>
 	<td><div id="gConnect">
     <button class="g-signin"
