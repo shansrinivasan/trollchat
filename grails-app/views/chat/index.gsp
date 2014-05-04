@@ -157,6 +157,7 @@ var userEmail = "";
         //alert("***********" + profile)
 		userEmail = profile['emails'][0].value;
         firstDisplay();
+        addSearchBtn();
         if (profile.error) {
           $('#profile').append(profile.error);
           return;
@@ -174,6 +175,13 @@ var userEmail = "";
     }
   };
 })();
+
+  function addSearchBtn() {
+	  var $srchBtn= $('<input/>').attr({ id: 'srchBtn', type: 'button', name:'btn1', value:'Search'}).click(function() {
+	  		searchVideo();
+	  	});
+	  	$('#srchbtndiv').append($srchBtn);
+	  }
   
   function firstDisplay() {
 		//alert(userEmail)
